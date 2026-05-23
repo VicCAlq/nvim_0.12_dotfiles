@@ -1,6 +1,3 @@
-local icons = require("resources.icons")
-local utils = require("core.utils")
-
 -- Setting leader key to space
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
@@ -27,6 +24,11 @@ map("v", "<Up>", "gk", { desc = "Move cursor up" })
 map("i", "<Up>", "<c-o>gk", { desc = "Move cursor up (insert mode)" })
 map("n", "H", "^", { desc = "Move to start of line" })
 map("n", "L", "$", { desc = "Move to end of line" })
+
+-- Code operations
+map("n", "gD", function() vim.lsp.buf.definition() end, {
+  noremap = true, silent = true, desc = "[g]et [D]efinitions (native)"
+})
 
 -- Indent in selection mode
 map("v", "<Tab>", ">gv", { desc = "Indent line" })

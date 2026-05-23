@@ -130,6 +130,11 @@
       "rev": "a783ce6e1a5b3bc90519f20b51f4a5f6702734af",
       "src": "https://github.com/nvim-mini/mini.ai"
     },
+    "mini.colors": {
+      "rev": "f43cab15ee0458acb13ac33a478b7e14fd4616eb",
+      "src": "https://github.com/nvim-mini/mini.colors",
+      "version": "'stable'"
+    },
     "mini.icons": {
       "rev": "9c7b1b90b15bdd69c52f6e31889dbc9987c30ec4",
       "src": "https://github.com/echasnovski/mini.icons"

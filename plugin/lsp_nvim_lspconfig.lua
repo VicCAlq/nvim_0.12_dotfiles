@@ -1,16 +1,11 @@
 local utils = require("core.utils")
 local gh = utils.gh
--- local icons = require("resources.icons")
--- local map = vim.keymap.set
 
 vim.pack.add({
   { src = gh("neovim/nvim-lspconfig") },
   { src = gh("j-hui/fidget.nvim") },
 })
 
--- local config  = {}
-
--- require("lspsaga").setup( config )
 vim.lsp.enable({
   'lua_ls',
   'jq-lsp',

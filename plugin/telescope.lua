@@ -112,6 +112,8 @@ map("n", "<leader>fr", builtin.resume, { desc = "[F]ind [R]esume" })
 map("n", "<leader>f.", builtin.oldfiles, { desc = "[F]ind Recent Files ('.' for repeat)" })
 map("n", "<leader><leader>", builtin.buffers, { desc = "[ ] Find existing buffers" })
 
+-- Find definitions
+map("n", "gd", builtin.lsp_definitions, { noremap = true, desc = "[g]et [d]efinitions" })
 -- Slightly advanced example of overriding default behavior and theme
 map("n", "<leader>f/", function()
   -- You can pass additional configuration to Telescope to change the theme, layout, etc.
