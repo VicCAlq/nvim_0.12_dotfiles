@@ -6,6 +6,18 @@ vim.pack.add({
   { src = gh("j-hui/fidget.nvim") },
 })
 
+vim.lsp.config('sqlls', {
+  cmd = { 'sql-language-server', 'up', '--method', 'stdio' },
+  filetypes = { 'sql', 'mysql' },
+  root_markers = { '.sqllsrc.json' },
+  settings = {
+    connections = {
+      name = "*",
+      adapter = "sqlite3",
+    }
+  }
+})
+
 vim.lsp.enable({
   'lua_ls',
   'jq-lsp',
