@@ -35,6 +35,6 @@ vim.lsp.enable({
   'nginx_language_server',
   'pyright',
   'yaml-language-server',
-  'sqlls',
+ -- 'sqlls',
   'postgres_lsp',
 })
